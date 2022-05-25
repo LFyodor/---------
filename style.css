@@ -1,0 +1,907 @@
+html, body, header {
+    padding: 0;
+    margin: 0;
+    background-size: cover;
+}
+
+img {
+    max-width: 100%;
+}
+
+.header, body, a, h1, h2, p, span, .back-to-top {
+    font-family: Hind, sans-serif;
+}
+
+body {
+    background-color: whitesmoke;
+}
+
+.header {
+    display: flex;
+    border-bottom: 1px solid gray;
+    height: 100px;
+    transition: 1s ease;
+    background-size: cover;
+}
+
+.header:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.logo {
+    padding-top: 35px;
+}
+
+.menu {
+    display: flex;
+    padding-top: 20px;
+    justify-content: right;
+    list-style-type: none;
+}
+
+.li-menu a {
+    margin-right: 30px;
+    text-transform: uppercase;
+    color: white;
+    font-size: 13px;
+    font-weight: bold;
+    text-decoration: none;
+    padding-left: 5px;
+    overflow: hidden;
+    transition: 0.3s linear;
+}
+
+.li-menu a:hover {
+    box-shadow: -15px 0 0 -6px rgb(83, 186, 226);
+}
+
+.dropdown {
+    display: none;
+}
+
+.navbar-fixed {
+    top: 0;
+    border-width: 0 0 1px;
+    right: 0;
+    left: 0;
+    z-index: 10;
+    background-size: cover;
+    position: fixed;
+}
+
+.promo {
+    height: 700px;
+    width: 100%;
+    margin-top: -70px;
+}
+
+.promo-back {
+    position: absolute;
+    background: url("img/1920x1080/01.jpg") center no-repeat;
+    filter: grayscale(0.3) invert(0.2) contrast(1.1);
+    height: 700px;
+    width: 100%;
+    z-index: 2;
+    background-size: cover;
+}
+
+.promo-text {
+    position: relative;
+    z-index: 3;
+    top: 200px;
+}
+
+.promo-text-1 {
+    text-align: center;
+    color: white;
+    font-size: 70px;
+    font-weight: bold;
+}
+
+.promo-text-2 {
+    font-size: 25px;
+    margin-top: -15px;
+    text-align: center;
+    color: white;
+}
+
+.intro {
+    width:250px;
+    height:60px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.intro a, .choose a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.7);
+    font-size: 14px;
+    height: 100%;
+    transition: 0.5s ease;
+}
+
+.intro a:hover, .choose a:hover {
+    background-color: aqua;
+    color: white;
+}
+
+.products {
+    display: block;
+    position: relative;
+    background-size: cover;
+    margin-top: 0;
+}
+
+.latest {
+    text-align: center;
+    width: 550px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.latest h2 {
+    color: rgba(0, 0, 0, 0.7);
+    font-size: 30px;
+}
+
+.latest p, .workspace p, .minimalism p, .cleant p {
+    color: rgba(0, 0, 0, 0.4);
+    font-size: 15px;
+    line-height: 1.4;
+}
+
+.wmc {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    padding-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.workspace, .minimalism, .cleant {
+    width: 370px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.workspace img, .minimalism img, .cleant img {
+    height: auto;
+}
+
+.wmc-text {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.wmc-text-1 {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: left;
+    padding-top: 15px;
+    color: rgba(0, 0, 0, 0.7);
+    width: 140px;
+    height: 40px;
+}
+
+.wmc-text-2 {
+    text-align: left;
+    width: 185px;
+    text-transform: uppercase;
+    font-size: 15px;
+    color: rgba(0, 0, 0, 0.2);
+    height: 40px;
+    padding-top: 20px;
+}
+
+.workspace p, .minimalism p, .cleant p {
+    text-align: left;
+}
+
+.workspace a, .minimalism a, .cleant a {
+    color: rgba(0, 0, 0, 0.5);
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: bold;
+    text-decoration: none;
+    overflow: hidden;
+    transition: 0.3s linear;
+}
+
+.wmc a:hover {
+    box-shadow: 15px 0 0 -6px rgb(83, 186, 226);
+}
+
+.two-foto {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    margin-top: 100px;
+    gap: 5px;
+}
+
+.service {
+    background: url("img/1920x1080/02.jpg") center no-repeat fixed;
+    z-index: 1;
+    background-size: cover;
+    height: 100%;
+}
+
+.service-boxes {
+    padding-top: 100px;
+    background-color: whitesmoke;
+    height: 500px;
+    padding-bottom: 100px;
+}
+
+.service-flex {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 5px;
+    width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.service-box {
+    background-color: white;
+    width: 33%;
+    height: 250px;
+}
+
+.service-box a {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    height: 100%;
+    transition: 1s ease;
+}
+
+.service-box a:hover {
+    background-color: aqua;
+    padding-top: 20px;
+}
+
+.text-1 {
+    font-size: 25px;
+    font-weight: bold;
+    text-align: left;
+    color: rgba(0, 0, 0, 0.7);
+    padding-top: 75px;
+    padding-left: 50px;
+}
+
+.text-2 {
+    font-size: 15px;
+    line-height: 1.4;
+    text-align: left;
+    padding-left: 50px;
+    width: 75%;
+    color: rgba(0, 0, 0, 0.4);
+}
+
+.promo-2 {
+    width: 100%;
+    height: 300px;
+    margin-top: 100px;
+    text-align: center;
+    vertical-align: 50%;
+}
+
+.promo-2-big {
+    font-size: 50px;
+    font-weight: bold;
+    color: white;
+}
+
+.promo-2-small {
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.7);
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.work {
+    background-color: white;
+    padding-top: 100px;
+    padding-bottom: 150px;
+    background-size: cover;
+    height: 100%;
+}
+
+.work-fotos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 1100px;
+    gap: 5px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.work-foto {
+    margin-top: -3px;
+    width: 33%;
+    height: auto;
+}
+
+.work-foto:first-child {
+    width: 66%;
+}
+
+.foto-1 {
+    flex-grow: 2;
+}
+
+.foto-2, .foto-3, .foto-4, .foto-5 {
+    flex-grow: 1;
+}
+
+.work-foto a {
+    transition: 0.2s;
+}
+
+.work-foto a:hover {
+    filter: brightness(0.5);
+}
+
+.pricing {
+    background-size: cover;
+}
+
+.baks {
+    display: flex;
+    justify-content: center;
+    height: 800px;
+    gap: 5px;
+    background-size: cover;
+}
+
+.pro {
+    background-color: white;
+    width: 400px;
+    height: 600px;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding-top: 100px;
+}
+
+.starter, .advanced {
+    background-color: white;
+    width: 400px;
+    height: 500px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.text-11 {
+    font-size: 22px;
+    font-weight: bold;
+    text-align: left;
+    color: rgba(0, 0, 0, 0.7);
+    padding-top: 75px;
+    padding-left: 50px;
+}
+
+.text-22, .text-23 {
+    font-size: 15px;
+    line-height: 1.4;
+    text-align: left;
+    width: 250px;
+    color: rgba(0, 0, 0, 0.4);
+}
+
+.text-23 {
+    padding-left: 50px;
+}
+
+.giving {
+    font-size: 13px;
+    text-align: left;
+    color: rgba(0, 0, 0, 0.6);
+    margin-left: 60px;
+    padding-left: 15px;;
+    box-shadow: -15px 0 0 -6px rgb(83, 186, 226);
+}
+
+.choose {
+    width:150px;
+    height:50px;
+    margin-left: 50px;
+    margin-top: 50px;
+    text-transform: uppercase;
+    font-weight: bold;
+    background-color: whitesmoke;
+}
+
+.customer {
+    background-color: white;
+    background-size: cover;
+    height: 400px;
+}
+
+.cust {
+    font-size: 30px;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.6);
+    padding-left: 25%;
+    padding-top: 80px;
+}
+
+.slider {
+    font-size: 17px;
+    line-height: 1.4;
+    text-align: left;
+    color: rgba(0, 0, 0, 0.4);
+    padding-left: 30%;
+    width: 50%;
+    transform-style: preserve-3d;
+    transition: 1s, 1s, 1s linear;
+}
+
+.slider:after {
+    right: -100%;
+    top: 0;
+    width: 50%;
+    padding-left: 40%;
+    position: absolute;
+    background: white;
+    background-size: cover;
+    border-radius: 5px;
+    content: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum';
+    transform-origin: left top;
+    transform: rotateY(-90deg);
+}
+
+.slider:hover {
+    transform-origin: left top;
+    transform: rotateY(90deg) translateX(100%);
+}
+
+.contact {
+    background-color: white;
+}
+
+.address {
+    text-align: center;
+    padding-top: 15px;
+    height: 50px;
+    font-size: 15px;
+    color: rgba(0, 0, 0, 0.6);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    margin-bottom: 0;
+}
+
+.footer {
+    display: flex;
+    height: 300px;
+    background-color: white;
+    background-size: cover;
+}
+
+.help {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    flex-wrap: wrap;
+    background-size: cover;
+    list-style-type: none;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 25%;
+    gap: 10px;
+    box-sizing: border-box;
+    position: relative;
+    flex-basis: auto;
+}
+
+.li-help {
+    margin-right: 100px;
+}
+
+.li-help a {
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 16px;
+    line-height: 2;
+    text-decoration: none;
+}
+
+.li-help a:hover {
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.logo-end {
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: white;
+    background-size: cover;
+    height: 100px;
+    padding-top: 50px;
+}
+
+.logo-end img {
+    transform: scale(0.7);
+    margin-left: 25%;
+}
+
+.back-to-top {
+    opacity: 0.4;
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    background-color: gray;
+    text-transform: uppercase;
+    right: 10px;
+    bottom: 10px;
+    text-align: center;
+    z-index: 20;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+
+.back-to-top a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    font-size: 11px;
+    height: 100%;
+    transition: 0.5 ease;
+    padding-top: 13px;
+}
+
+.back-to-top:hover {
+    background-color: black;
+}
+
+@media all and (max-width: 1024px) {
+    .navbar {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .workspace, .minimalism, .cleant {
+        width: 300px;
+    }
+
+    .service-flex {
+        width: 1000px;
+    }
+
+    .work-fotos {
+        width: 1000px;
+        height: 590px;
+    }
+
+    .foto-1 {
+        width: 66%;
+    }
+
+    .foto-2, .foto-3, .foto-4, .foto-5 {
+        width: 33%;
+    }
+
+    .starter, .pro, .advanced {
+        width: 300px;
+    }
+
+    .help {
+        padding-left: 50px;
+    }
+
+    .logo-end img {
+        transform: scale(0.6);
+        margin-left: 30px;
+    }
+
+    .logo-end {
+        height: 80px;
+    }
+}
+
+@media all and (max-width: 768px) {
+    .dropbtn {
+        background-color: transparent;
+        color: rgb(83, 186, 226);
+        font-size: 15px;
+        font-weight: bold;
+        border: none;
+    }
+
+    .dropdown {
+        position: relative;
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        padding-top: 30px;
+    }
+
+    .menu-drop {
+        display: none;
+        position: relative;
+        background-color: rgba(0, 0, 0, 0.5);
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+        z-index: 1;
+        margin-top: 52px;
+        list-style-type: none;
+        margin-left: -710px;
+        margin-right: -50px;
+    }
+
+    .menu-drop a {
+        color: white;
+        text-decoration: none;
+        display: block;
+        line-height: 4;
+        text-transform: uppercase;
+        font-size: 15px;
+        font-weight: bold;
+        text-decoration: none;
+        padding-left: 5px;
+        overflow: hidden;
+        transition: 0.3 linear;
+    }
+
+    .dropdown:hover .menu-drop {
+        display: block;
+    }
+
+    .li-menu a:hover {
+        box-shadow: -15px 0 0 -6px rgb(83, 186, 226);
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .navbar {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .promo-text {
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .workspace, .minimalism, .cleant {
+        width: 230px;
+    }
+
+    .service-boxes {
+        height: auto;
+    }
+
+    .service-flex {
+        width: 750px;
+    }
+
+    .service-box {
+        width: 30%;
+        height: auto;
+    }
+
+    .text-1, .text-2 {
+        padding-left: 25px;
+    }
+
+    .promo-2-small {
+        width: 700px;
+    }
+
+    .work-fotos {
+        width: 750px;
+        height: 440px;
+    }
+
+    .foto-1 {
+        width: 66%;
+    }
+
+    .foto-2, .foto-3, .foto-4, .foto-5 {
+        width: 32%;
+    }
+
+    .starter, .pro, .advanced {
+        width: 240px;
+        margin-top: 100px;
+    }
+
+    .pro {
+        height: 600px;
+        padding-top: 0;
+    }
+
+    .text-11, .text-23 {
+        width: 150px;
+    }
+
+    .giving {
+        width: 140px;
+    }
+
+    .customer {
+        height: 500px;
+    }
+
+    .cust {
+        padding-left: 25px;
+    }
+
+    .slider {
+        padding-left: 75px;
+    }
+
+    .slider:after {
+        padding-left: 75px;
+    }
+
+    .help {
+        padding-left: 25px;
+    }
+
+    .li-help {
+        margin-right: 0;
+        width: 150px;
+    }
+}
+
+@media all and (max-width: 425px) {
+    .menu-drop {
+        margin-left: -360px;
+    }
+
+    .promo-text {
+        width: 80%;
+    }
+
+    .promo-text-1 {
+        font-size: 40px;
+    }
+
+    .latest {
+        width: 85%;
+    }
+
+    .wmc {
+        flex-wrap: wrap;
+    }
+
+    .workspace, .minimalism, .cleant {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+
+    .two-foto {
+        flex-wrap: wrap;
+    }
+
+    .service-flex {
+        width: 100%;
+    }
+
+    .service-box {
+        width: 100%;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .text-1 {
+        padding-top: 50px;
+    }
+
+    .text-2 {
+        padding-bottom: 50px;
+    }
+
+    .promo-2 {
+        height: 400px;
+    }
+
+    .promo-2-small {
+        width: 90%;
+    }
+
+    .work-fotos {
+        width: 90%;
+        margin-left: 15px;
+        margin-right: 15px;
+        height: 1500px;
+    }
+
+    .work-foto {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+
+    .foto-1 {
+        width: 100%;
+        flex-grow: 1;
+    }
+
+    .work-foto img {
+        height: 100%;
+    }
+
+    .baks {
+        flex-wrap: wrap;
+        height: 1360px;
+        margin-top: 50px;
+        margin-bottom: 100px;
+    }
+    .starter, .pro, .advanced {
+        width: 90%;
+        height: 450px;
+        margin-left: 15px;
+        margin-right: 15px;
+        margin-top: 0;
+    }
+
+    .text-11, .text-23 {
+        width: 70%;
+    }
+
+    .cust, .slider, .slider:after {
+        width: 70%;
+    }
+
+    .footer {
+        height: 550px;
+    }
+
+    .logo-end img {
+        margin-left: 0;
+    }
+}
+
+@media all and (max-width: 375px) {
+    .menu-drop {
+        margin-left: -310px;
+    }
+
+    .customer {
+        height: 550px;
+    }
+
+    .address {
+        padding-left: 15px;
+        padding-right: 15px;
+        height: 100px;
+    }
+}
+
+@media all and (max-width: 320px) {
+    .menu-drop {
+        margin-left: -260px;
+    }
+
+    .wmc {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .customer {
+        height: 600px;
+    }
+}
